@@ -20,7 +20,6 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="activityservice" target="17" />
       <module name="eureka" target="17" />
     </bytecodeTargetLevel>
   </component>
