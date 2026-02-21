@@ -9,7 +9,7 @@ import java.util.List;
 
 @Service
 @RequiredArgsConstructor
-public class RecommendationService {
+public class  RecommendationService {
     private final RecommendationRespositiory recommendationRespositiory;
 
     public List<Recommendation> getUserRecommendation(String userId) {
