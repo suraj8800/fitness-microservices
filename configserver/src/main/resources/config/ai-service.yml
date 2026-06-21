@@ -1,7 +1,9 @@
 spring:
-  mongodb:
-    uri: mongodb://localhost:27017/airecommendationfitness
-    database: airecommendationfitness
+  data:
+    mongodb:
+      database: airecommendationfitness
+      host: localhost
+      port: 27017
 
   kafka:
     bootstrap-servers: 127.0.0.1:9092
@@ -16,8 +18,8 @@ spring:
 
 gemini:
   api:
-    url: ${GEMINI_URL}
-    key: ${GEMINI_KEY}
+    url: ${GEMINI_URL:https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?alt=json}
+    key: ${GEMINI_KEY:IIIzaSyBsUZRoWwKTn4JrDF11cn1I46w8k1dq6uEEE}
 
 kafka:
   topic:

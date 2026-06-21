@@ -26,5 +26,4 @@ public class RecommendationController {
     public ResponseEntity<Recommendation> getActivityRecommendation(@PathVariable String activityId){
         return ResponseEntity.ok(recommendationService.getActivityRecommendation(activityId));
     }
-
 }
